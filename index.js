@@ -1,1 +1,3 @@
-module.exports = require('src/prime');
+require('babel/register');
+
+module.exports = require('./dist/prime');

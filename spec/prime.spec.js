@@ -1,4 +1,4 @@
-var Prime = require('../src/prime');
+var Prime = require('../index');
 
 describe('Prime', function() {
   describe('takePrimes', function() {

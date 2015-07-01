@@ -1,16 +1,25 @@
 var R = require('ramda');
 
+var GeneratorUtils = require('./generator-utils');
+
+
+function* primes() {
+  yield 2;
+
+  var n = 3;
+
+  while(true) {
+    if(isPrime(n)) {
+      yield n;
+    }
+
+    n++;
+  }
+}
+
 
 function takePrimes(n) {
-  var primes = [];
-
-  for(var i = 2; primes.length < n; i++) {
-    if(isPrime(i)) {
-      primes.push(i);
-    }
-  }
-
-  return primes;
+  return GeneratorUtils.take(n, primes());
 }
 
 
