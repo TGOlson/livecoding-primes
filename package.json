@@ -1,0 +1,20 @@
+{
+  "name": "livecoding-primes",
+  "version": "0.0.0",
+  "description": "Utilities from primes numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node ./spec"
+  },
+  "keywords": [
+    "primes",
+    "numbers",
+    "functional",
+    "coolness"
+  ],
+  "author": "Livecoding",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "0.15.1"
+  }
+}
