@@ -63,6 +63,7 @@ var isFactorOf = R.curry(function (n, factor) {
 });
 
 module.exports = {
+  primes: primes,
   takePrimes: takePrimes,
   isPrime: isPrime
 };

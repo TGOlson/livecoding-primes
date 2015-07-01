@@ -1,6 +1,16 @@
 var Prime = require('../index');
 
 describe('Prime', function() {
+  describe('primes', function() {
+    it('should return an infinite list of all prime numbers', function() {
+      var primes = Prime.primes();
+
+      expect(primes.next().value).toBe(2);
+      expect(primes.next().value).toBe(3);
+      expect(primes.next().value).toBe(5);
+    });
+  });
+
   describe('takePrimes', function() {
     it('should return the desired amount of primes', function() {
       expect(Prime.takePrimes(0)).toEqual([]);

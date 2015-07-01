@@ -1,6 +1,6 @@
 {
   "name": "livecoding-primes",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Utilities from primes numbers.",
   "main": "index.js",
   "repository": {
